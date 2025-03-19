@@ -30,17 +30,57 @@ The properties in the table below can be used in these parts of fiboa documents:
 | ------------- | ---- | ----------- |
 | forestcarbon:projectName | string | The name of the carbon project as given in the documentation. |
 | forestcarbon:projectID | string | A combination of the registry abbreviation and project number. |
-| forestcarbon:registryName | string | The name of the registry where project information is hosted. Possible values are: American Carbon Registry, BioCarbon Registry, Climate Action Reserve, EcoRegistry, Gold Standard, Verra. |
+| forestcarbon:registryName | enum | The name of the registry where project information is hosted. Possible values are: American Carbon Registry, BioCarbon Registry, Climate Action Reserve, EcoRegistry, Gold Standard, Verra. |
 | forestcarbon:methodology | string | **REQUIRED**. The name of the methodology used for the project's implementation. |
-| forestcarbon:projectType | string | **REQUIRED**. The type of forestry carbon offset program. One of the following: ARR, AD, IFM. |
+| forestcarbon:projectType | enum | **REQUIRED**. The type of forestry carbon offset program. One of the following: ARR, AD, IFM. |
 | forestcarbon:country | string | The country where the project is located. |
 | forestcarbon:projectDeveloperName | string | Name of the entity or individual organizing, proposing, or advocating a particular carbon offset project. |
-| forestcarbon:projectStartDate | string | Date of the start of the crediting period (ISO 8601 format). |
-| forestcarbon:projectEndDate | string | Date of the end of the crediting period (ISO 8601 format). |
-| forestcarbon:dateOfEntry | string | Date when the project information was added to the database (ISO 8601 format). |
-| forestcarbon:processingApproach | string | Method used to obtain boundary data. One of: Official, Georeferenced, Linear, Method. |
-| forestcarbon:pdDeclinedToProvide | string | Whether the project developer declined to provide geometry information. One of: Yes, No, N/A. |
-| forestcarbon:geometryType | string | Indicates if the geometry is a point or a polygon. |
+| forestcarbon:projectStartDate | date | Date of the start of the crediting period (ISO 8601 format). |
+| forestcarbon:projectEndDate | date | Date of the end of the crediting period (ISO 8601 format). |
+| forestcarbon:dateOfEntry | date | Date when the project information was added to the database (ISO 8601 format). |
+| forestcarbon:processingApproach | enum | Method used to obtain boundary data. One of: Official, Georeferenced, Linear, Method. |
+| forestcarbon:pdDeclinedToProvide | enum | Whether the project developer declined to provide geometry information. One of: Yes, No, N/A. |
+| forestcarbon:geometryType | enum | Indicates if the geometry is a point or a polygon. |
+
+## Geometry Extensions
+
+The extension works with the following geometry types:
+
+| Property Name | Type | Description |
+| ------------- | ---- | ----------- |
+| forestcarbon:projectArea | geojson | The geographical area where the project participants implement activities to reduce deforestation. Represented as GeoJSON Polygon/MultiPolygon. |
+| forestcarbon:projectAccountingArea | geojson | The geographical area of the project which was used to calculate carbon credits. Represented as GeoJSON Polygon/MultiPolygon. |
+| forestcarbon:projectReferenceRegion | geojson | The geographical area of the project from where historical and current deforestation and forest degradation quantities and trends are obtained. Represented as GeoJSON Polygon/MultiPolygon. |
+
+## Enumeration Values
+
+### Registry Name
+- American Carbon Registry
+- BioCarbon Registry
+- Climate Action Reserve
+- EcoRegistry
+- Gold Standard
+- Verra
+
+### Project Type
+- ARR (Afforestation, Reforestation, Revegetation)
+- AD (Avoided Deforestation)
+- IFM (Improved Forest Management)
+
+### Processing Approach
+- Official (canonical boundary obtained from registry or project developer)
+- Georeferenced (boundary data obtained via georeferencing and digitizing maps)
+- Linear (boundary data distributed as linear features processed into geometries)
+- Method (developer-specified protocol followed to obtain boundary data)
+
+### pdDeclinedToProvide
+- Yes
+- No
+- N/A
+
+### Geometry Type
+- Point
+- Polygon
 
 ## Contributing
 
