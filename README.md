@@ -42,16 +42,6 @@ The properties in the table below can be used in these parts of fiboa documents:
 | forestcarbon:pdDeclinedToProvide | enum | Whether the project developer declined to provide geometry information. One of: Yes, No, N/A. |
 | forestcarbon:geometryType | enum | Indicates if the geometry is a point or a polygon. |
 
-## Geometry Extensions
-
-The extension works with the following geometry types:
-
-| Property Name | Type | Description |
-| ------------- | ---- | ----------- |
-| forestcarbon:projectArea | geojson | The geographical area where the project participants implement activities to reduce deforestation. Represented as GeoJSON Polygon/MultiPolygon. |
-| forestcarbon:projectAccountingArea | geojson | The geographical area of the project which was used to calculate carbon credits. Represented as GeoJSON Polygon/MultiPolygon. |
-| forestcarbon:projectReferenceRegion | geojson | The geographical area of the project from where historical and current deforestation and forest degradation quantities and trends are obtained. Represented as GeoJSON Polygon/MultiPolygon. |
-
 ## Enumeration Values
 
 ### Registry Name
