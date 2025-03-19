@@ -40,7 +40,6 @@ The properties in the table below can be used in these parts of fiboa documents:
 | forestcarbon:dateOfEntry | date | Date when the project information was added to the database (ISO 8601 format). |
 | forestcarbon:processingApproach | enum | Method used to obtain boundary data. One of: Official, Georeferenced, Linear, Method. |
 | forestcarbon:pdDeclinedToProvide | enum | Whether the project developer declined to provide geometry information. One of: Yes, No, N/A. |
-| forestcarbon:geometryType | enum | Indicates if the geometry is a point or a polygon. |
 
 ## Enumeration Values
 
@@ -67,10 +66,6 @@ The properties in the table below can be used in these parts of fiboa documents:
 - Yes
 - No
 - N/A
-
-### Geometry Type
-- Point
-- Polygon
 
 ## Contributing
 
