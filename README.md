@@ -1,10 +1,10 @@
-# Template Extension Specification
+# Forest Carbon Extension Specification
 
-- **Title:** Template
+- **Title:** Forest Carbon
 - **Identifier:** <https://fiboa.github.io/extension-template/v0.1.0/schema.yaml>
-- **Property Name Prefix:** template
+- **Property Name Prefix:** forestcarbon
 - **Extension Maturity Classification:** Proposal/Candidate/Stable
-- **Owner**: @your-gh-handles @person2
+- **Owner**: @alexlogs
 
 This document explains the Template Extension to the
 [Field Boundaries for Agriculture (fiboa) Specification](https://github.com/fiboa/specification).
