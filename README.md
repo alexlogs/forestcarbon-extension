@@ -26,8 +26,9 @@ The properties in the table below can be used in these parts of fiboa documents:
 
 | Property Name   | Type   | Description |
 | --------------- | ------ | ----------- |
-| template:field1 | string | **REQUIRED**. Describe the required field... |
-| template:field2 | int32  | Describe the field... |
+| forestcarbon:method | string | **REQUIRED**. Describe the required field... |
+| forestcarbon:registry | int32  | Describe the field... |
+| forestcarbon:type | int32  | Describe the field... |
 
 ## Contributing
 
