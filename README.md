@@ -7,11 +7,11 @@
 - **Owner**: @alexlogs
 
 This document explains the forestcarbon Extension to the
-[Field Boundaries for Agriculture (fiboa) Specification](https://github.com/fiboa/specification).
+[Vector Core Language (Vecorel)](https://github.com/vecorel/specification).
 
 The ForestCarbon Extension is a specification to support forest carbon projects. This extension provides a standardized schema for representing forest carbon projects and their boundaries in alignment with carbon registries and methodologies.
 
-This builds off a database that was built for a global database of nature-based carbon offset project boundaries. You can read the [preprint here](https://www.researchsquare.com/article/rs-4535931/v1) and find the [dataset here](https://zenodo.org/records/11459391).
+This builds off a global database that was built for nature-based carbon offset project boundaries. You can read the [preprint here](https://www.researchsquare.com/article/rs-4535931/v1) and find the [dataset here](https://zenodo.org/records/11459391).
 
 - Examples:
   - [GeoJSON](examples/geojson/)
