@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-vecorel-cli = ">=0.3"
+vecorel-cli = "==0.3.0"
 pymarkdownlnt = ">=0.9"
 
 [scripts]

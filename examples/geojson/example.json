@@ -35,9 +35,16 @@
     ]
   },
   "properties": {
-    "determination_datetime": "2020-01-01T00:00:00Z",
-    "template:field1": 1,
-    "template:field2": "abc"
+    "projectName": "Madre de Dios Amazon REDD Project",
+    "projectID": "VCS-844",
+    "registryName": "Verra",
+    "methodology": "VM0007",
+    "projectType": "REDD+",
+    "country": "Peru",
+    "projectDeveloperName": "Project Developer Name",
+    "projectStartDate": "2009-07-01",
+    "projectEndDate": "2046-06-30",
+    "processingApproach": "Official"
   },
   "links": [
     {
