@@ -1,8 +1,42 @@
 $schema: https://vecorel.github.io/sdl/v0.2.0/schema.json
-required:
-  - template:field1
+id: https://vecorel.github.io/forestcarbon-template/v0.1.0/schema.yaml
+title: ForestCarbon Extension
+description: A standardized schema for representing forest carbon projects and their boundaries in alignment with carbon registries and methodologies
 properties:
-  template:field1:
-    type: uint8
-  template:field2:
+  forestcarbon:projectName:
     type: string
+    description: The name of the carbon project as given in the documentation
+  forestcarbon:projectID:
+    type: string
+    description: A combination of the registry abbreviation and project number
+  forestcarbon:registryName:
+    type: string
+    description: The name of the registry where project information is hosted
+  forestcarbon:methodology:
+    type: string
+    description: The name of the methodology used for the project's implementation
+  forestcarbon:projectType:
+    type: string
+    description: The type of forestry carbon offset program
+  forestcarbon:country:
+    type: string
+    description: The country where the project is located
+  forestcarbon:projectDeveloperName:
+    type: string
+    description: Name of the entity or individual organizing, proposing, or advocating a particular carbon offset project. In case of multiple entities/individuals, only the first name is recorded here
+  forestcarbon:projectStartDate:
+    type: string
+    format: date
+    description: Date of the start of the crediting period
+  forestcarbon:projectEndDate:
+    type: string
+    format: date
+    description: Date of the end of the crediting period
+  forestcarbon:processingApproach:
+    type: string
+    enum:
+      - Official
+      - Georeferenced
+      - Linear
+      - Method
+    description: One of four possible values - Official, Georeferenced, Linear, or Method
